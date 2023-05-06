@@ -1,0 +1,77 @@
+.navbar {
+  .container {
+    margin: 0 37px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include largeDesktop {
+      margin: 0;
+      max-width: 1280px;
+      width: 95%;
+      margin: auto;
+    }
+    .navbar__logo {
+      .navbar__logo--img {
+        width: 250px;
+        height: 85px;
+        margin-bottom: -20px;
+        @include smallDesktop {
+          width: 200px;
+          height: 80px;
+          margin-bottom: 0;
+        }
+        @include tablet {
+          width: 150px;
+          height: 50px;
+        }
+      }
+    }
+    .navbar-navigation {
+      @include tablet {
+        position: relative;
+
+        width: 100%;
+      }
+      .navigation__list {
+        display: flex;
+        gap: 20px;
+        @include tablet {
+          display: block;
+          position: absolute;
+          top: 100%;
+          right: 0;
+          background-color: #fff;
+          border-radius: 0 0 10px 10px;
+          width: 100%;
+          padding: 7px 10px;
+        }
+        .navigation__list--item {
+          @include tablet {
+            padding: 7px 10px;
+            border-bottom: 1px solid #efefef;
+          }
+        }
+      }
+      .menu {
+        display: block !important;
+        @include tablet {
+          display: none !important;
+        }
+      }
+      .active_menu {
+        // animation: navAnim 0.3s;
+        @include tablet {
+          display: block !important;
+        }
+      }
+      .navbar__buttons--mobile {
+        display: flex;
+        text-align: right;
+        display: none;
+        @include tablet {
+          display: block;
+        }
+      }
+    }
+  }
+}

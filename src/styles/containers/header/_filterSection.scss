@@ -1,0 +1,125 @@
+.filter-section {
+  .filter-container {
+    // padding: 25px 35px;
+    padding: 25px 0;
+    border: 1px solid #cbe6f1;
+    box-shadow: 0px 4px 24px #dce4e8;
+    border-radius: 8px;
+    background: #ffffff;
+    .filter-wrapper {
+      width: 96%;
+      margin: 0 auto;
+      .filter-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+        @include tablet {
+          flex-direction: column;
+          gap: 10px;
+        }
+        .top__left {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          gap: 90px;
+          @include smallDesktop {
+            gap: 20px;
+          }
+          @include miniPortraitTablet {
+            flex-direction: column;
+            gap: 10px;
+          }
+          .top__left--item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            span {
+              background: #1c0a0a;
+              width: 24px;
+              height: 24px;
+              @include smallDesktop {
+                width: 16px;
+                height: 16px;
+              }
+              @include miniPortraitTablet {
+                display: none;
+              }
+            }
+            p {
+            }
+          }
+        }
+        .top__right {
+          .top__right__text {
+            .top__right__text--yellow {
+              color: #ec6904;
+              font-weight: 500;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .filter-input {
+        .filter-input__filed {
+          padding: 18px 0;
+          width: 100%;
+          background: rgba(150, 205, 227, 0.5);
+          border: 1px solid #96cde3;
+          border-radius: 2px;
+        }
+      }
+      .filter-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 90px;
+        margin-top: 16px;
+        @include tablet {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .bottom__left {
+        }
+        .bottom__right {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          gap: 90px;
+          @include smallDesktop {
+            gap: 20px;
+          }
+          @include miniPortraitTablet {
+            flex-direction: column;
+            gap: 10px;
+          }
+          .bottom__right--item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            span {
+              background: #1c0a0a;
+              width: 24px;
+              height: 24px;
+              @include smallDesktop {
+                width: 16px;
+                height: 16px;
+              }
+              @include miniPortraitTablet {
+                display: none;
+              }
+            }
+            p {
+            }
+          }
+        }
+      }
+    }
+  }
+}

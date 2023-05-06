@@ -1,0 +1,65 @@
+.banner {
+  .banner-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 70px 45px 0 8px;
+    @include largeTablet {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+    .banner-text {
+      .banner-text__heading {
+        .banner-text__heading--title {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 48px;
+          line-height: 58px;
+          color: #293649;
+          @include smallDesktop {
+            font-size: 38px;
+            line-height: 48px;
+          }
+          @include tablet {
+            font-size: 32px;
+            line-height: 40px;
+          }
+          @include miniPortraitTablet {
+            font-size: 28px;
+          }
+        }
+      }
+      .banner-text__logos {
+        margin-top: 34px;
+        display: flex;
+        gap: 27px;
+        @include largeTablet {
+          justify-content: space-around;
+        }
+
+        .banner-text__logos--trustpilot {
+          @include miniPortraitTablet {
+            width: 70%;
+          }
+        }
+        .banner-text__logos--iata {
+          @include miniPortraitTablet {
+            width: 70%;
+          }
+        }
+      }
+    }
+    .banner__image {
+      @include largeTablet {
+        text-align: center;
+      }
+      .banner__image--img {
+        width: 100%;
+        height: 100%;
+        @include largeTablet {
+          width: 80%;
+        }
+      }
+    }
+  }
+}

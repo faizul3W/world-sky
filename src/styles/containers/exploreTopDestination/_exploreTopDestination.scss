@@ -1,0 +1,102 @@
+.exploreTopDestination {
+  margin-top: 64px;
+  margin-bottom: 50px;
+  .destination-container {
+    .destination__header {
+      text-align: center;
+      .destination__header--title {
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+        color: #293649;
+        margin-bottom: 6px;
+        @include tablet {
+          font-size: 28px;
+          line-height: 36px;
+          font-weight: 600;
+        }
+      }
+      .destination__header--text {
+        margin-bottom: 40px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #293649;
+        @include tablet {
+          font-size: 16px;
+          line-height: 18px;
+        }
+      }
+    }
+    .destination-card-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      font-family: "Inter";
+      @include largeDesktop {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include portraitTablet {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .destination__card {
+        .destination__image {
+          margin-bottom: 13px;
+          .destination__image--img {
+            width: 100%;
+          }
+        }
+        .destination__text {
+          .destination__text--title {
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 25px;
+            color: #293649;
+            margin-bottom: 20px;
+          }
+          .destination__text__bottom {
+            display: flex;
+            justify-content: space-between;
+            .destination__text--amount {
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 22px;
+              color: #00aff5;
+            }
+            .destination__text--button {
+              padding: 8px 26px;
+              border: 1px solid #00aff5;
+              border-radius: 18px;
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .destination__buttons {
+      display: flex;
+      width: 130px;
+      gap: 15px;
+      margin: 20px auto;
+      align-items: center;
+      .destination__buttons--previous {
+        background: #ff7400;
+        border-radius: 50%;
+        padding: 16px;
+        color: #fff;
+      }
+      .destination__buttons--next {
+        background: #00aff5;
+        border-radius: 50%;
+        color: #fff;
+        padding: 16px;
+      }
+    }
+  }
+}

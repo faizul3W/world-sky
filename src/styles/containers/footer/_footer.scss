@@ -1,0 +1,73 @@
+.footer {
+  .footer-container {
+    font-family: "Roboto";
+    padding-top: 60px;
+    padding-bottom: 118px;
+    color: #353359;
+    .footer-wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 100px;
+      @include mediumDesktop {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+      }
+      @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+      }
+      @include miniPortraitTablet {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
+      .footer-col {
+        .footer__title {
+          font-weight: 600;
+          font-size: 21px;
+          line-height: 25px;
+          margin-bottom: 28px;
+          @include mediumDesktop {
+            font-size: 18px;
+            line-height: 20px;
+            margin-bottom: 20px;
+          }
+          @include tablet {
+            font-size: 16px;
+            line-height: 15px;
+          }
+        }
+        .footer__link {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          margin-bottom: 15px;
+          @include mediumDesktop {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 10px;
+          }
+          @include tablet {
+            font-size: 14px;
+            line-height: 28px;
+            margin-bottom: 8px;
+          }
+        }
+      }
+      .footer__feedback__link {
+        font-weight: 400;
+        margin-bottom: 15px;
+        font-size: 24px;
+        line-height: 28px;
+        @include mediumDesktop {
+          font-size: 20px;
+          line-height: 20px;
+          margin-bottom: 20px;
+        }
+        @include tablet {
+          font-size: 18px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+}

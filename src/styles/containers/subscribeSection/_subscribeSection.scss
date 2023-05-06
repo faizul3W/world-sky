@@ -1,0 +1,80 @@
+.subscribeSection {
+  margin-bottom: 112px;
+  .subscribe-container {
+    background-image: url("../../../assets/SubscribeBg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 48px 40px;
+    @include portraitTablet {
+      padding: 32px 20px;
+      background-image: none;
+    }
+    .subscribe-form {
+      position: relative;
+      .subscribe-form__input {
+        background: #ffffff;
+        opacity: 0.8;
+        border: 1px solid #cbe6f1;
+        border-radius: 8px;
+        width: 100%;
+        // padding: 48px 40px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #243c60;
+        padding: 18px 0;
+        opacity: 0.7;
+        @include smallDesktop {
+          font-size: 20px;
+        }
+        @include tablet {
+          font-size: 16px;
+          padding: 18px 20px;
+          width: 90%;
+        }
+        @include portraitTablet {
+          padding: 15px 10px;
+          // width: 100%;
+          font-size: 14px;
+        }
+      }
+      .subscribe-form__button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #00aff5;
+        border: 1px solid #cbe6f1;
+        border-radius: 8px;
+        padding: 18px 50px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #fff;
+        @include smallDesktop {
+          font-size: 20px;
+          padding: 18px 20px;
+        }
+        @include tablet {
+          font-size: 16px;
+          padding: 18px 20px;
+        }
+        @include portraitTablet {
+          padding: 15px 20px;
+          font-size: 14px;
+          left: 0;
+          top: 100%;
+          width: 50%;
+        }
+        span {
+          @include portraitTablet {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

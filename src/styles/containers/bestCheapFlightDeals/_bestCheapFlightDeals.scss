@@ -1,0 +1,94 @@
+.bestCheapFlightDeals {
+  .deals-container {
+    .deals__header {
+      text-align: center;
+      .deals__header--title {
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+        color: #293649;
+        margin-bottom: 33px;
+        @include tablet {
+          font-size: 28px;
+          line-height: 36px;
+          font-weight: 600;
+        }
+      }
+      .deals__filter {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 33px;
+        @include mediumDesktop {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        @include tablet {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @include portraitTablet {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .deals__filter--item {
+          padding: 8px 26px;
+          border: 1px solid #00aff5;
+          border-radius: 18px;
+        }
+        .selected {
+          color: #fff;
+          background: #00aff5;
+        }
+      }
+    }
+    .deals-card-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      font-family: "Inter";
+      @include largeDesktop {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include portraitTablet {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .deals__card {
+        .deals__image {
+          margin-bottom: 13px;
+          .deals__image--img {
+            width: 100%;
+          }
+        }
+        .deals__text {
+          .deals__text--title {
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 25px;
+            color: #293649;
+            margin-bottom: 20px;
+          }
+          .deals__text__bottom {
+            display: flex;
+            justify-content: space-between;
+            .deals__text--amount {
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 22px;
+              color: #00aff5;
+            }
+            .deals__text--button {
+              padding: 8px 26px;
+              border: 1px solid #00aff5;
+              border-radius: 18px;
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
