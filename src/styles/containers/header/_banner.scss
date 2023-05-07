@@ -38,8 +38,8 @@
         gap: 27px;
         @include largeTablet {
           justify-content: space-around;
+          margin-top: 0;
         }
-
         .banner-text__logos--trustpilot {
           @include miniPortraitTablet {
             width: 70%;

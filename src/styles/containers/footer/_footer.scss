@@ -19,6 +19,7 @@
       @include miniPortraitTablet {
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
+        text-align: center;
       }
       .footer-col {
         .footer__title {
