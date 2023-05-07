@@ -14,7 +14,7 @@
       background-image: url("../../../assets/maskGroup.png");
       background-repeat: no-repeat;
       background-size: 100% 100%;
-      padding: 45px 0 45px 45px;
+      padding: 47px 0 65px 40px;
       @include mediumDesktop {
         width: 100%;
         text-align: center;
@@ -36,6 +36,7 @@
         font-weight: 500;
         font-size: 56px;
         color: #293649;
+        margin: 10px 0 0 0;
         @include mediumDesktop {
           font-size: 42px;
         }

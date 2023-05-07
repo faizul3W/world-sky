@@ -46,6 +46,7 @@
           padding: 7px 10px;
         }
         .navigation__list--item {
+          cursor: pointer;
           @include tablet {
             padding: 7px 10px;
             border-bottom: 1px solid #efefef;
