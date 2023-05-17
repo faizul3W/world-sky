@@ -15,11 +15,21 @@ const Navbar = () => {
         <div className="navbar-navigation">
           <menu className={`${isMenuHide ? "active_menu" : "menu"}`}>
             <ul className="navigation__list">
-              <li className="navigation__list--item">Home</li>
-              <li className="navigation__list--item">About</li>
-              <li className="navigation__list--item">last Minute Flight</li>
-              <li className="navigation__list--item">Offers</li>
-              <li className="navigation__list--item">Contact us</li>
+              <li className="navigation__list--item nav-link nav-link-ltr">
+                Home
+              </li>
+              <li className="navigation__list--item nav-link nav-link-ltr">
+                About
+              </li>
+              <li className="navigation__list--item nav-link nav-link-ltr">
+                last Minute Flight
+              </li>
+              <li className="navigation__list--item nav-link nav-link-ltr">
+                Offers
+              </li>
+              <li className="navigation__list--item nav-link nav-link-ltr">
+                Contact us
+              </li>
             </ul>
           </menu>
           <div className="navbar__buttons--mobile">

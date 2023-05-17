@@ -32,7 +32,7 @@ const FilterSection = () => {
               <input
                 className="filter-input__filed"
                 type="text"
-                placeholder="One way"
+                placeholder="  One way"
               />
             </div>
             <div className="filter-bottom">

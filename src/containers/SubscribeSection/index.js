@@ -9,7 +9,7 @@ const SubscribeSection = () => {
             <input
               className="subscribe-form__input"
               type="email"
-              placeholder="Enter Your Email Address.."
+              placeholder="  Enter Your Email Address.."
             />
             <button className="subscribe-form__button">
               Subscribe <span>For Great Deals</span>

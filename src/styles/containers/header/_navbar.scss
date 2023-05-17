@@ -52,6 +52,35 @@
             border-bottom: 1px solid #efefef;
           }
         }
+        .nav-link {
+          padding: 20px 0px;
+          display: inline-block;
+          position: relative;
+          @include tablet {
+            padding: 10px 0px;
+            display: block;
+          }
+        }
+
+        .nav-link::before {
+          transition: 300ms;
+          height: 2px;
+          content: "";
+          position: absolute;
+          background-color: #031d44;
+        }
+
+        .nav-link-ltr::before {
+          width: 0%;
+          bottom: 10px;
+          @include tablet {
+            bottom: 2px;
+          }
+        }
+
+        .nav-link-ltr:hover::before {
+          width: 100%;
+        }
       }
       .menu {
         display: block !important;

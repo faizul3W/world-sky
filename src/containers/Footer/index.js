@@ -42,10 +42,12 @@ const Footer = () => {
                 className="footer__feedback__link"
                 style={{ fontWeight: "bold" }}
               >
-                8686-11-9494
+                9856-40-0039
               </p>
               <p className="footer__feedback__link">We Accept</p>
-              <p className="footer__feedback__link">info@triparies</p>
+              <p className="footer__feedback__link">
+                info@worldskytraveler.com
+              </p>
             </div>
           </div>
         </div>
